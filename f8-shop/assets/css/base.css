@@ -1,0 +1,109 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color:#333;
+    --rate-gold-color:#f5ce3b;
+    --primary-color:#FF450C;
+    --header-height:120px;
+    --nav-height:28px;
+    --header-under-height: calc( var(--header-height) - var(--nav-height) );
+    --scale : 0 ;
+ 
+}
+*{
+    box-sizing: inherit;
+
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6em;
+    box-sizing: border-box;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0px auto;
+}
+.grid__full-width{
+    width: 100%;
+}
+.grid__row {
+     display: flex;
+     flex-wrap: wrap;
+     margin-left: -5px;
+     margin-right: -5px;
+     padding-top: 10px;
+}
+.grid__column-2{
+    width: 16.6667%;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.grid__column-2-4{
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+.grid__column-10{
+    width: 83.3333%;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.btn{
+    background-color: #fff;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 15px;
+    display: inline-flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: 1.4em;
+    min-width: 90px ;
+    cursor: pointer;
+    border-radius: 2px;
+    margin:0 5px;
+}
+.btn:hover{
+    background-color: #fdfdfd;
+}
+.btn--primary{
+    background-color: var(--primary-color) !important;
+    color: #fff;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fadeInOverlay{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.4;
+    }
+}
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@keyframes modal{
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
