@@ -9,6 +9,7 @@
     --header-under-height: calc( var(--header-height) - var(--nav-height) );
     --scale : 0 ;
     --min-width-name-page:42px;
+    --sort-bar-mt-height: 48px;
  
 }
 *{
@@ -20,14 +21,8 @@ html{
     line-height: 1.6em;
     box-sizing: border-box;
 }
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0px auto;
-}
-.grid__full-width{
-    width: 100%;
-}
+
+
 .grid__row {
      display: flex;
      flex-wrap: wrap;
