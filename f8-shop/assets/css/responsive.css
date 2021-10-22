@@ -22,6 +22,10 @@
     }
     .contain{
         margin-top: calc( var(--header-height) + var(--sort-bar-mt-height));
+        padding-top: 0px;
+    }
+    .header-cart{
+        -webkit-tap-highlight-color: transparent;
     }
     .cart__list{
         position: fixed;
@@ -32,6 +36,7 @@
      padding: 0 calc((100% - 644px) / 2);
      transform-origin:  top;
     }
+
     .cart__list::before{
         display: none;
     }
@@ -42,10 +47,10 @@
         display: block;
         z-index: 1;
     }
-    :root{
-        --header-height:68px;
-        --nav-height:0px;
+    .catelory-mt{
+        display: block;
     }
+    
 }
 
 /*tablet */
@@ -63,8 +68,17 @@
     .search-history{
         width: 466px;
     }
-    
-
+    .logo__shopee{
+        width: 129px;
+    }
+    .cart__list-number-has-cart {
+        top: -3px;
+        right: -10px;
+    }
+    :root{
+        --header-height:68px;
+        --nav-height:0px;
+    }
 }
 
 /*mobile*/
@@ -79,8 +93,27 @@
     .logo{
         width: unset;
     }
+    .logo__shopee {
+        margin-left: 31px;
+        width: 114px;
+    }
     .search-mobile-icon-swap{
         display: block;
+    }
+    .cart__icon{
+        font-size: 2em !important;
+    }
+    .search-mobile-icon i{
+        font-size: 2.2em !important;
+    }
+    .cart__list-number-has-cart {
+        top: -3px;
+        right: -10px;
+        height: 19px;
+        width: 22px;
+    }
+    .cart__list{
+        top: 55px;
     }
     .search__box{
         margin: 3px;
@@ -89,6 +122,32 @@
         top: calc(100% + 3px);
         left: -3px;
         width: 110%;
+    }
+    .product{
+        margin: 0 10px;
+    }
+    .app{
+        overflow: hidden;
+    }
+    .pagination__link {
+        font-size: 1.6em;
+        margin: 0 2px;
+    }
+    .pagination-under-product-home {
+        margin: 34px 0;
+    }
+    .footer-content{
+        text-align: center;
+        display: block;
+        margin-bottom: 24px;
+    }
+    :root{
+        --min-width-name-page:36px;
+        --header-height:54px;
+        --nav-height:0px;
+    }
+    .margin-footer-content-mobile{
+        margin-left: 25%;
     }
     
 }

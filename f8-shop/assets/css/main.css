@@ -934,6 +934,20 @@ display: none;
 .sort-bar-mt-item:first-child.sort-bar-mt-item::before{
     border-left: none;
 }
+.sort-bar-mt-item--active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: var(--primary-color);
+}
+
+.sort-bar-mt-item--active .sort-bar-mt-link{
+    color: var(--primary-color);
+}
 
 .sort-bar-mt-link{
     display: block;
@@ -1256,6 +1270,59 @@ display: none;
     line-height: 34px !important;
     color: #555555 ;
 }
+/*catelory-mt*/
+
+.catelory-mt{
+margin: 10px 0;
+display: none;
+}
+
+.catelory-mt__list{
+    max-width: 100%;
+    list-style: none;
+    display: flex;
+    flex-shrink: 0;
+    overflow-x: auto;
+}
+.catelory-mt__list::-webkit-scrollbar{
+    display: none;
+}
+
+.catelory-mt__item{
+
+}
+.catelory-mt__item:nth-of-type(3n+1) .catelory-mt__link{
+    background-color: #87AFD8;
+}
+.catelory-mt__item:nth-of-type(3n+2) .catelory-mt__link{
+    background-color: #76C9BD;
+}
+.catelory-mt__item:nth-of-type(3n+3) .catelory-mt__link{
+    background-color: #88CF81;
+}
+
+.catelory-mt__link{
+    --line-height:1.4em;
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 200;
+    font-size: 1.4em;
+    display: block;
+    width: 110px;
+    padding: 0 4px;
+    text-align: center;
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * 2);
+    border-radius: 4px;
+    margin: 0 5px ;
+    overflow: hidden;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+
+
 
 /* produce-home */
 .row-margin{
@@ -1264,11 +1331,13 @@ display: none;
 .product-item{
     display: block;
     text-decoration: none;
-position: relative;
-box-shadow: 0 1px 2px  rgb(0, 0, 0, 0.1);
-border-radius: 2px;
-will-change: transform;
-transition: transform ease-in 0.05s;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0 1px 2px  rgb(0, 0, 0, 0.1);
+    border-radius: 2px;
+    will-change: transform;
+    transition: transform ease-in 0.05s;
+
 }
 .product-item:hover{
     box-shadow: 0 1px 20px  rgb(0, 0, 0, 0.05);
