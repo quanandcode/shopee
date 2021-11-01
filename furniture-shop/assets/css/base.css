@@ -17,3 +17,6 @@ html{
     font-family: poppins;
     font-size: 62.5%;
 }
+.color-hover{
+    color: var(--text-hover-color) !important;
+}

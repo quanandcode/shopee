@@ -21,6 +21,14 @@
     margin-left: 0;
     margin-right: 0;
 }
+.row.furniture-sub-gutters {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+.row.bedroom-sub-gutters {
+    margin-left: 16px;
+    margin-right: 16px;
+}
 
 .col {
     padding-left: 4px;
@@ -31,7 +39,14 @@
     padding-left: 0;
     padding-right: 0;
 }
-
+.row.furniture-sub-gutters .col {
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.row.bedroom-sub-gutters .col {
+    padding-left: 16px;
+    padding-right: 16px;
+}
 .c-0 {
     display: none;
 }
